@@ -1,0 +1,13 @@
+server:
+  port: 8081
+eureka:
+  instance:
+    # eureka的主机地址
+    hostname: localhost
+  client:
+    # registerWithEureka和fetchRegistry都设置false表名自己是一个eureka server
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      # 默认的注册中心地址
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

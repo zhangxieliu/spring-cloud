@@ -1,0 +1,14 @@
+eureka:
+  client:
+    serviceUrl:
+      # 默认注册中心的地址
+      defaultZone: http://localhost:8081/eureka/
+server:
+  port: 8088
+spring:
+  application:
+    # 应用名称
+    name: server-feign
+feign:
+  hystrix:
+    enabled: true

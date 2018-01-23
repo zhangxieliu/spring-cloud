@@ -1,0 +1,11 @@
+server:
+  port: 8082
+eureka:
+  client:
+    serviceUrl:
+      # 默认的注册中心地址，也就是Eureka server服务地址
+      defaultZone: http://localhost:8081/eureka/
+spring:
+  application:
+    # 这个需要指明，因为之后的服务于服务之间相互调用一般都是根据这个name
+    name: server-provider
