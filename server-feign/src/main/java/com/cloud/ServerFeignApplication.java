@@ -13,7 +13,7 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients;
  */
 @SpringBootApplication
 @EnableDiscoveryClient// 开启从注册中心发现客户端服务的功能
-@EnableFeignClients
+@EnableFeignClients// 开启Feign的功能
 public class ServerFeignApplication {
 
 	public static void main(String[] args) {
